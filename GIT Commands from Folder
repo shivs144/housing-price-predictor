@@ -1,0 +1,31 @@
+GIT Commands from Folder
+$ history
+    1  code .
+    2  git init
+    3  git add .
+    4  git commit -m "updated app.py"
+    5   git config --global user.email "you@example.com"
+    6  git config --global user.email "shivam954719@gmail.com"
+    7  git config --global user.name "shivs144"
+    8  git commit -m "updated app.py"
+    9  git remote add origin https://github.com/shivs144/housing-price-predictor.git
+   10  git push -u origin master
+   11  git push -u origin main
+   12  git branch
+   13  git branch -M main
+   14  git push -u origin main
+   15  git add .
+   16  git commit -m "Initial commit"
+   17  git push -u origin main
+   18  git checkout master
+   19  git branch -M main
+   20  git push -u origin main
+   21  git pull origin main --allow-unrelated-histories
+   22  git push -u origin main
+   23  git pull origin main --allow-unrelated-histories
+   24  git status
+   25  git commit -m "commiting readme"
+   26  git status
+   27  git pull origin main --allow-unrelated-histories
+   28  git push -u origin main
+   29  history
