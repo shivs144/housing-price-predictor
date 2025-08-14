@@ -1,0 +1,39 @@
+HOW TO RUN:
+
+1. Rust (VS Studio) for Streamlit dependencies: 
+https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe
+2. Python 3.11.9 ## mandatory
+https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe
+3. numpy==1.26.4
+4. pandas==1.5.3
+5. streamlit default version on download 1.17 to 20
+ 
+Other dependencies in requirements.txt
+
+Open Terminal in VS Code OR GitBash/GitUI in this folder
+close all the open instances
+
+Commands to run app on Git Bash:
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+rm -r \old_venv_dir
+py -3.11 -m venv venv311
+python -m pip --upgrade pip setuptools wheel
+pip install setuptools wheel
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+netstat -ano | findstr :8501
+streamlit run <Copy path streamlit_app.py> --server.port 8501
+
+
+if the port is busy then use kill command with process_id***:
+
+taskkill /PID <PID> /F
+TCP    [::1]:51698            [::1]:8501             SYN_SENT        5072***
+
+
+check if the app.py has correct syntax:
+
+python -c "import ast; ast.parse(open('ui/app.py', encoding='utf-8').read())"
+
+

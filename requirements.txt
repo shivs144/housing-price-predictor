@@ -1,0 +1,9 @@
+streamlit
+pandas>=1.5.3
+numpy>=1.26.4
+catboost
+scikit-learn
+matplotlib
+seaborn
+geopy
+pandasai
